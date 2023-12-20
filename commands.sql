@@ -11,6 +11,6 @@ SELECT * FROM Compiles;
 -- This command will show the tracks belonging to every album in the database.
 SELECT * FROM Contains;
 
--- This command will show all the played tracks in the database.
+-- This command will show all the tracks played first ine each album, along with the time.
 SELECT * FROM Played;
 
