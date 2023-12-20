@@ -5,6 +5,17 @@ INSERT INTO Artist VALUES (4, "Melvins");
 INSERT INTO Artist VALUES (5, "Mogwai");
 INSERT INTO Artist VALUES (6, "Warpaint");
 
+
+INSERT INTO Compiles
+    VALUES
+        ("Dawn of Midi", "Dysnomia", 1),
+        ("Interpol", "Turn on the Bright Lights", 2),
+        ("Melvins", "Houdini", 4),
+        ("Mogwai", "Come on Die Young", 5),
+        ("Mogwai", "Every Country’s Sun", 5),
+        ("The Chrome Cranks", "Dead Cool", 3),
+        ("Warpaint", "Heads Up", 6);
+ 
 INSERT INTO Album VALUES (1, 1, "Dysnomia");
 INSERT INTO Album VALUES (2, 1, "Turn on the Bright Lights");
 INSERT INTO Album VALUES (3, 1, "Dead Cool");
@@ -12,6 +23,86 @@ INSERT INTO Album VALUES (4, 1, "Houdini");
 INSERT INTO Album VALUES (5, 1, "Come on Die Young");
 INSERT INTO Album VALUES (5, 2, "Every Country’s Sun");
 INSERT INTO Album VALUES (6, 1, "Heads Up");
+
+
+INSERT INTO Contains
+    VALUES
+        ("Dysnomia", 'Io'),
+        ("Dysnomia", 'Sinope'),
+        ("Dysnomia", 'Atlas'),
+        ("Dysnomia", 'Nix'),
+        ("Dysnomia", 'Moon'),
+        ("Dysnomia", 'Ymir'),
+        ("Dysnomia", 'Ijiraq'),
+        ("Dysnomia", 'Algol'),
+        ("Dysnomia", 'Dysnomia'),
+        ("Turn on the Bright Lights", 'Untitled'),
+        ("Turn on the Bright Lights", 'Obstacle 1'),
+        ("Turn on the Bright Lights", 'NYC'),
+        ("Turn on the Bright Lights", 'PDA'),
+        ("Turn on the Bright Lights", 'Say Hello to the Angels'),
+        ("Turn on the Bright Lights", 'Hands Away'),
+        ("Turn on the Bright Lights", 'Obstacle 2'),
+        ("Turn on the Bright Lights", 'Stella Was a Diver and She Was Always Down'),
+        ("Turn on the Bright Lights", 'Roland'),
+        ("Turn on the Bright Lights", 'The New'),
+        ("Turn on the Bright Lights", 'Leif Erikson'),
+        ("Dead Cool", 'Dead Cool'),
+        ("Dead Cool", 'Desperate Friend'),
+        ("Dead Cool", 'Way-Out Lover'),
+        ("Dead Cool", 'Down So Low'),
+        ("Dead Cool", 'Bloodshot Eye'),
+        ("Dead Cool", 'Nightmare in Pink'),
+        ("Dead Cool", 'Shine It On'),
+        ("Dead Cool", 'Burn Baby Burn'),
+        ("Houdini", 'Hooch'),
+        ("Houdini", 'Night Goat'),
+        ("Houdini", 'Lizzy'),
+        ("Houdini", 'Goin’ Blind'),
+        ("Houdini", 'Honey Bucket'),
+        ("Houdini", 'Hag Me'),
+        ("Houdini", 'Set Me Straight'),
+        ("Houdini", 'Sky Pup'),
+        ("Houdini", 'Joan of Arc'),
+        ("Houdini", 'Teet'),
+        ("Houdini", 'Copache'),
+        ("Houdini", 'Pearl Bomb'),
+        ("Houdini", 'Spread Eagle Beagle'),
+        ("Come on Die Young", 'Punk Rock:'),
+        ("Come on Die Young", 'Cody'),
+        ("Come on Die Young", 'Helps Both Ways'),
+        ("Come on Die Young", 'Year 2000 Non-Compliant Cardia'),
+        ("Come on Die Young", 'Kappa'),
+        ("Come on Die Young", 'Waltz of Aidan'),
+        ("Come on Die Young", 'May Nothing But Happiness Come Through Your Door'),
+        ("Come on Die Young", 'Oh! How the Dogs Stack Up'),
+        ("Come on Die Young", 'Ex-Cowboy'),
+        ("Come on Die Young", 'Chocky'),
+        ("Come on Die Young", 'Christmas Steps'),
+        ("Come on Die Young", 'Punk Rock/Puff Daddy/ Antichrist'),
+        ("Every Country’s Sun", 'Coolverine'),
+        ("Every Country’s Sun", 'Party in the Dark'),
+        ("Every Country’s Sun", 'Brain Sweeties'),
+        ("Every Country’s Sun", 'Crossing the Road Material'),
+        ("Every Country’s Sun", 'aka 47'),
+        ("Every Country’s Sun", '20 Size'),
+        ("Every Country’s Sun", '1000 Foot Face'),
+        ("Every Country’s Sun", 'Don’t Believe the Fife'),
+        ("Every Country’s Sun", 'Battered at a Scramble'),
+        ("Every Country’s Sun", 'Old Poisons'),
+        ("Every Country’s Sun", 'Every Country’s Sun'),
+        ("Heads Up", 'Whiteout'),
+        ("Heads Up", 'By Your Side'),
+        ("Heads Up", 'New Song'),
+        ("Heads Up", 'The Stall'),
+        ("Heads Up", 'So Good'),
+        ("Heads Up", 'Don’t Wanna'),
+        ("Heads Up", 'Don’t Let Go'),
+        ("Heads Up", 'Dre'),
+        ("Heads Up", 'Heads Up'),
+        ("Heads Up", 'Above Control'),
+        ("Heads Up", 'Today Dear');
+
 
 INSERT INTO Track VALUES (1, 1, 1, 'Io', '6.03');
 INSERT INTO Track VALUES (1, 1, 2, 'Sinope', '6.53');
@@ -22,6 +113,7 @@ INSERT INTO Track VALUES (1, 1, 6, 'Ymir', '4.27');
 INSERT INTO Track VALUES (1, 1, 7, 'Ijiraq', '5.22');
 INSERT INTO Track VALUES (1, 1, 8, 'Algol', '4.16');
 INSERT INTO Track VALUES (1, 1, 9, 'Dysnomia', '4.14');
+
 
 INSERT INTO Track VALUES (2, 1, 1, 'Untitled', '3.57');
 INSERT INTO Track VALUES (2, 1, 2, 'Obstacle 1', '4.11');
@@ -35,6 +127,7 @@ INSERT INTO Track VALUES (2, 1, 9, 'Roland', '3.36');
 INSERT INTO Track VALUES (2, 1, 10, 'The New', '6.07');
 INSERT INTO Track VALUES (2, 1, 11, 'Leif Erikson', '4.00');
 
+
 INSERT INTO Track VALUES (3, 1, 1, 'Dead Cool', '5.25');
 INSERT INTO Track VALUES (3, 1, 2, 'Desperate Friend', '2.04');
 INSERT INTO Track VALUES (3, 1, 3, 'Way-Out Lover', '3.08');
@@ -43,6 +136,7 @@ INSERT INTO Track VALUES (3, 1, 5, 'Bloodshot Eye', '3.54');
 INSERT INTO Track VALUES (3, 1, 6, 'Nightmare in Pink', '2.06');
 INSERT INTO Track VALUES (3, 1, 7, 'Shine It On', '4.15');
 INSERT INTO Track VALUES (3, 1, 8, 'Burn Baby Burn', '6.13');
+
 
 INSERT INTO Track VALUES (4, 1, 1, 'Hooch', '2.49');
 INSERT INTO Track VALUES (4, 1, 2, 'Night Goat', '4.41');
@@ -58,6 +152,7 @@ INSERT INTO Track VALUES (4, 1, 11, 'Copache', '2.07');
 INSERT INTO Track VALUES (4, 1, 12, 'Pearl Bomb', '2.46');
 INSERT INTO Track VALUES (4, 1, 13, 'Spread Eagle Beagle', '10.14');
 
+
 INSERT INTO Track VALUES (5, 1, 1, 'Punk Rock:', '2.09');
 INSERT INTO Track VALUES (5, 1, 2, 'Cody', '6.33');
 INSERT INTO Track VALUES (5, 1, 3, 'Helps Both Ways', '4.53');
@@ -71,6 +166,7 @@ INSERT INTO Track VALUES (5, 1, 10, 'Chocky', '9.23');
 INSERT INTO Track VALUES (5, 1, 11, 'Christmas Steps', '10.39');
 INSERT INTO Track VALUES (5, 1, 12, 'Punk Rock/Puff Daddy/Antichrist', '2.14');
 
+
 INSERT INTO Track VALUES (5, 2, 1, 'Coolverine', '6.17');
 INSERT INTO Track VALUES (5, 2, 2, 'Party in the Dark', '4.02');
 INSERT INTO Track VALUES (5, 2, 3, 'Brain Sweeties', '4.44');
@@ -82,6 +178,7 @@ INSERT INTO Track VALUES (5, 2, 8, 'Don’t Believe the Fife', '6.24');
 INSERT INTO Track VALUES (5, 2, 9, 'Battered at a Scramble', '4.03');
 INSERT INTO Track VALUES (5, 2, 10, 'Old Poisons', '4.30');
 INSERT INTO Track VALUES (5, 2, 11, 'Every Country’s Sun', '5.38');
+
 
 INSERT INTO Track VALUES (6, 1, 1, 'Whiteout', '4.42');
 INSERT INTO Track VALUES (6, 1, 2, 'By Your Side', '4.32');
@@ -95,10 +192,13 @@ INSERT INTO Track VALUES (6, 1, 9, 'Heads Up', '4.57');
 INSERT INTO Track VALUES (6, 1, 10, 'Above Control', '5.06');
 INSERT INTO Track VALUES (6, 1, 11, 'Today Dear', '4.49');
 
-INSERT INTO Played VALUES (1, 1, 9, "20060814102103");
-INSERT INTO Played VALUES (2, 1, 1, "20060814102522");
-INSERT INTO Played VALUES (3, 1, 1, "20060814103025");
-INSERT INTO Played VALUES (4, 1, 3, "20060814103654");
-INSERT INTO Played VALUES (5, 1, 4, "20060814104143");
-INSERT INTO Played VALUES (5, 2, 2, "20060814104337");
-INSERT INTO Played VALUES (6, 1, 9, "20060814104721");
+
+INSERT INTO Played VALUES ('Io',"20060814102103");
+INSERT INTO Played VALUES ('Untitled',"20060814102522");
+INSERT INTO Played VALUES ('Dead Cool',"20060814103025");
+INSERT INTO Played VALUES ('Hooch',"20060814103654");
+INSERT INTO Played VALUES ('Punk Rock:',"20060814104143");
+INSERT INTO Played VALUES ('Coolverine',"20060814104337");
+INSERT INTO Played VALUES ('Whiteout',"20060814104721");
+
+

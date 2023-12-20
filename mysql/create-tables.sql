@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS Artist (
   PRIMARY KEY (artist_id)
 );
 
-CREATE TABLE IF NOT EXISTS compiles (
+CREATE TABLE IF NOT EXISTS Compiles (
   artist_name VARCHAR(128) REFERENCES Artist(artist_name),
   album_name  VARCHAR(128) REFERENCES Album(album_name),
   artist_id INT REFERENCES Artist(artist_id)
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS Album (
   FOREIGN KEY (artist_id) REFERENCES Artist(artist_id)
 );
 
-CREATE TABLE IF NOT EXISTS contains (
+CREATE TABLE IF NOT EXISTS Contains (
   album_name VARCHAR(128) REFERENCES Album(album_name),
   track_name VARCHAR(128) REFERENCES Track(track_name)
 );
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS Track (
 );
 
 CREATE TABLE IF NOT EXISTS Played (
-  track_name VARCHAR(128)  REFERENCES contains(track_name),
+  track_name VARCHAR(128)  REFERENCES Contains(track_name),
   played TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (played)
 );
